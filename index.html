@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hồ sơ cá nhân NGUYEN THANH TAM - Kết nối Việt Nam và Nhật Bản">
+  <title>Portfolio | NGUYEN THANH TAM</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <!-- ====== WAVES - TOP & BOTTOM ====== -->
+  <div class="wave top-wave">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path class="wave-path" d="M0,50 Q300,10 600,50 T1200,50 L1200,0 L0,0 Z"></path>
+    </svg>
+  </div>
+  
+  <div class="wave bottom-wave">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path class="wave-path" d="M0,50 Q300,10 600,50 T1200,50 L1200,0 L0,0 Z"></path>
+    </svg>
+  </div>
+
+  <!-- ====== FLAGS - CLICKABLE FOR LANGUAGE SWITCH ====== -->
+  <div class="vn-flag" onclick="switchLanguage('vi')" title="Tiếng Việt">
+    <img src="https://flagcdn.com/w80/vn.png" alt="Vietnam Flag" loading="lazy">
+  </div>
+  <div class="jp-flag" onclick="switchLanguage('ja')" title="日本語">
+    <img src="https://flagcdn.com/w80/jp.png" alt="Japan Flag" loading="lazy">
+  </div>
+
+  <!-- ====== PAMPAS GRASS DECORATION ====== -->
+  <img src="https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f33e.svg" 
+       alt="Pampas Grass Left" 
+       class="pampas-grass left"
+       loading="lazy">
+  <img src="https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f33e.svg" 
+       alt="Pampas Grass Right" 
+       class="pampas-grass right"
+       loading="lazy">
+
+  <!-- ====== HERO SECTION ====== -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="wave-emoji">👋</span>
+        <span data-ja="ポートフォリオ" data-vi="Xin Chào!">ポートフォリオ</span>
+      </h1>
+      <p class="hero-subtitle" data-ja="外国人留学生 就職活動用" data-vi="Chào mừng bạn đến với hồ sơ cá nhân của tôi">
+        外国人留学生 就職活動用
+      </p>
+      <p class="hero-name">NGUYEN THANH TAM</p>
+      <p class="hero-description" data-ja="グエン・タン・タム" data-vi="Người Việt Nam đang du học tại Nhật Bản">
+        グエン・タン・タム
+      </p>
+    </div>
+  </section>
+
+  <!-- ====== MAIN CONTAINER ====== -->
+  <div class="container">
+    
+    <!-- ====== PROFILE SECTION ====== -->
+    <section class="profile">
+      <div class="avatar">
+        <img src="tam.png" 
+             alt="Profile Photo - NGUYEN THANH TAM" 
+             onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=533&fit=crop&crop=faces'"
+             loading="lazy">
+        <div class="avatar-overlay">
+          <span data-ja="📸 プロフィール写真" data-vi="📸 Ảnh đại diện">📸 プロフィール写真</span>
+        </div>
+      </div>
+      <h2 class="profile-name">NGUYEN THANH TAM</h2>
+      <p class="profile-role">
+        <span data-ja="💻 ITビジネス専攻学生 | 🇯🇵 千葉, Japan" data-vi="💻 Sinh viên IT | 🇯🇵 Chiba, Nhật Bản">
+          💻 ITビジネス専攻学生 | 🇯🇵 千葉, Japan
+        </span>
+      </p>
+      <div class="profile-actions">
+        <a href="#about" class="intro-btn primary">
+          <span>📖</span> 
+          <span data-ja="自己紹介" data-vi="Giới Thiệu">自己紹介</span>
+        </a>
+        <a href="#contact" class="intro-btn secondary">
+          <span>📱</span> 
+          <span data-ja="連絡先" data-vi="Liên Hệ">連絡先</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ====== ABOUT CARD ====== -->
+    <div class="info-card" id="about">
+      <div class="card-header">
+        <h2 data-ja="🌸 基本情報" data-vi="🌸 Thông Tin Cá Nhân">🌸 基本情報</h2>
+        <span class="card-badge" data-ja="Personal Info" data-vi="Thông tin">Personal Info</span>
+      </div>
+      <div class="info-grid">
+        <div class="info-item">
+          <span class="info-icon">👤</span>
+          <div class="info-content">
+            <label data-ja="名前" data-vi="Họ và Tên">名前</label>
+            <p>NGUYEN THANH TAM</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">🔤</span>
+          <div class="info-content">
+            <label data-ja="フリガナ" data-vi="Phiên âm">フリガナ</label>
+            <p>グエン・タン・タム</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">🎂</span>
+          <div class="info-content">
+            <label data-ja="生年月日" data-vi="Ngày Sinh">生年月日</label>
+            <p>2004年3月28日 (20歳)</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">🌏</span>
+          <div class="info-content">
+            <label data-ja="国籍" data-vi="Quốc tịch">国籍</label>
+            <p data-ja="ベトナム 🇻🇳" data-vi="Việt Nam 🇻🇳">ベトナム 🇻🇳</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">📍</span>
+          <div class="info-content">
+            <label data-ja="出身" data-vi="Quê Quán">出身</label>
+            <p data-ja="ベトナム" data-vi="Việt Nam">ベトナム</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">🏠</span>
+          <div class="info-content">
+            <label data-ja="現在地" data-vi="Nơi ở hiện tại">現在地</label>
+            <p data-ja="千葉県, 日本 🇯🇵" data-vi="Chiba, Nhật Bản 🇯🇵">千葉県, 日本 🇯🇵</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== EDUCATION CARD ====== -->
+    <div class="info-card">
+      <div class="card-header">
+        <h2 data-ja="🎓 学歴" data-vi="🎓 Học Vấn">🎓 学歴</h2>
+        <span class="card-badge" data-ja="Education" data-vi="Học vấn">Education</span>
+      </div>
+      
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker">🏫</div>
+          <div class="timeline-content">
+            <h3 data-ja="ランドン高校（ベトナム）" data-vi="Trường THPT Lam Sơn (Việt Nam)">ランドン高校（ベトナム）</h3>
+            <span class="timeline-period">2019 - 2022</span>
+            <ul class="timeline-details">
+              <li>
+                <strong data-ja="卒業" data-vi="Tốt nghiệp">卒業</strong>: 
+                <span data-ja="2022年3月" data-vi="03/2022">2022年3月</span>
+              </li>
+              <li>
+                <strong data-ja="成績" data-vi="Thành tích">成績</strong>: 
+                <span data-ja="優秀" data-vi="Giỏi">優秀</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">🇯🇵</div>
+          <div class="timeline-content">
+            <h3 data-ja="利根国際学院 日本語学校" data-vi="Trường Nhật ngữ Tone Kokusai">利根国際学院 日本語学校</h3>
+            <span class="timeline-period">2022 - 2024</span>
+            <ul class="timeline-details">
+              <li>
+                <strong data-ja="所在地" data-vi="Địa điểm">所在地</strong>: 
+                <span data-ja="茨城県" data-vi="Ibaraki, Nhật Bản">茨城県</span>
+              </li>
+              <li>
+                <strong data-ja="卒業" data-vi="Tốt nghiệp">卒業</strong>: 
+                <span data-ja="2024年3月" data-vi="03/2024">2024年3月</span>
+              </li>
+              <li>
+                <strong data-ja="資格" data-vi="Chứng chỉ">資格</strong>: 
+                <span data-ja="JLPT N4合格" data-vi="Đạt JLPT N4">JLPT N4合格</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">💻</div>
+          <div class="timeline-content">
+            <h3 data-ja="千葉モードビジネス専門学校" data-vi="Trường Chuyên môn Chiba Mode Business">千葉モードビジネス専門学校</h3>
+            <span class="timeline-period" data-ja="2024年4月 〜 現在" data-vi="04/2024 - Hiện tại">2024年4月 〜 現在</span>
+            <ul class="timeline-details">
+              <li>
+                <strong data-ja="学科" data-vi="Ngành học">学科</strong>: 
+                <span data-ja="ITビジネス科" data-vi="Khoa IT Business">ITビジネス科</span>
+              </li>
+              <li>
+                <strong data-ja="卒業予定" data-vi="Dự kiến tốt nghiệp">卒業予定</strong>: 
+                <span data-ja="2027年3月" data-vi="03/2027">2027年3月</span>
+              </li>
+              <li>
+                <strong data-ja="状態" data-vi="Trạng thái">状態</strong>: 
+                <span data-ja="在学中" data-vi="Đang học">在学中</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="language-section">
+        <h3 data-ja="🌐 言語能力" data-vi="🌐 Ngoại Ngữ">🌐 言語能力</h3>
+        <div class="language-bars">
+          <div class="language-item">
+            <div class="language-header">
+              <span data-ja="🇻🇳 ベトナム語" data-vi="🇻🇳 Tiếng Việt">🇻🇳 ベトナム語</span>
+              <span class="language-level" data-ja="母国語" data-vi="Bản Ngữ">母国語</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 100%"></div>
+            </div>
+          </div>
+          <div class="language-item">
+            <div class="language-header">
+              <span data-ja="🇯🇵 日本語" data-vi="🇯🇵 Tiếng Nhật">🇯🇵 日本語</span>
+              <span class="language-level">JLPT N4</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 65%"></div>
+            </div>
+          </div>
+          <div class="language-item">
+            <div class="language-header">
+              <span data-ja="🇬🇧 英語" data-vi="🇬🇧 Tiếng Anh">🇬🇧 英語</span>
+              <span class="language-level" data-ja="受験予定" data-vi="Sẽ thi">TOEIC 受験予定</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 50%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== SKILLS CARD ====== -->
+    <div class="info-card">
+      <div class="card-header">
+        <h2 data-ja="🛠️ 資格・スキル" data-vi="🛠️ Kỹ Năng">🛠️ 資格・スキル</h2>
+        <span class="card-badge" data-ja="Skills" data-vi="Kỹ năng">Skills</span>
+      </div>
+      
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 data-ja="💻 プログラミング" data-vi="💻 Lập trình">💻 プログラミング</h3>
+          <div class="skill-tags">
+            <span class="skill-tag advanced">HTML5</span>
+            <span class="skill-tag advanced">CSS3</span>
+            <span class="skill-tag intermediate">JavaScript</span>
+            <span class="skill-tag intermediate">Pascal</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 data-ja="📊 ビジネスツール" data-vi="📊 Công cụ văn phòng">📊 ビジネスツール</h3>
+          <div class="skill-tags">
+            <span class="skill-tag advanced">Excel</span>
+            <span class="skill-tag advanced" data-ja="スプレッドシート" data-vi="Google Sheets">スプレッドシート</span>
+            <span class="skill-tag intermediate">VLOOKUP</span>
+            <span class="skill-tag intermediate" data-ja="ピボットテーブル" data-vi="Pivot Table">ピボットテーブル</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 data-ja="🎨 デザイン・編集" data-vi="🎨 Thiết kế - Chỉnh sửa">🎨 デザイン・編集</h3>
+          <div class="skill-tags">
+            <span class="skill-tag intermediate">Photoshop</span>
+            <span class="skill-tag intermediate">CapCut</span>
+            <span class="skill-tag intermediate" data-ja="動画編集" data-vi="Chỉnh sửa video">動画編集</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 data-ja="📜 資格" data-vi="📜 Chứng chỉ">📜 資格</h3>
+          <div class="skill-tags">
+            <span class="skill-tag expert">JLPT N4</span>
+            <span class="skill-tag" data-ja="TOEIC 準備中" data-vi="TOEIC (Chuẩn bị)">TOEIC 準備中</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="soft-skills">
+        <h3 data-ja="🌟 性格・長所" data-vi="🌟 Kỹ Năng Mềm">🌟 性格・長所</h3>
+        <div class="soft-skills-list">
+          <div class="soft-skill-item">
+            <span class="soft-skill-icon">✅</span>
+            <strong data-ja="責任感" data-vi="Tinh thần trách nhiệm">責任感</strong>
+            <p data-ja="締切を守ることが得意です" data-vi="Luôn đúng hạn, có trách nhiệm cao">締切を守ることが得意です</p>
+          </div>
+          <div class="soft-skill-item">
+            <span class="soft-skill-icon">📚</span>
+            <strong data-ja="学習意欲" data-vi="Ham học hỏi">学習意欲</strong>
+            <p data-ja="新しい技術を積極的に学びます" data-vi="Học công nghệ mới tích cực">新しい技術を積極的に学びます</p>
+          </div>
+          <div class="soft-skill-item">
+            <span class="soft-skill-icon">🤝</span>
+            <strong data-ja="チームワーク" data-vi="Làm việc nhóm">チームワーク</strong>
+            <p data-ja="チームに貢献できます" data-vi="Đóng góp tốt cho team">チームに貢献できます</p>
+          </div>
+          <div class="soft-skill-item">
+            <span class="soft-skill-icon">🌏</span>
+            <strong data-ja="異文化理解" data-vi="Hiểu văn hóa đa dạng">異文化理解</strong>
+            <p data-ja="日越の文化を理解しています" data-vi="Hiểu văn hóa Nhật - Việt">日越の文化を理解しています</p>
+          </div>
+          <div class="soft-skill-item">
+            <span class="soft-skill-icon">😊</span>
+            <strong data-ja="ホスピタリティ" data-vi="Thân thiện">ホスピタリティ</strong>
+            <p data-ja="アルバイトで培った接客力" data-vi="Kỹ năng giao tiếp từ part-time">アルバイトで培った接客力</p>
+          </div>
+          <div class="soft-skill-item">
+            <span class="soft-skill-icon">💪</span>
+            <strong data-ja="向上心" data-vi="Cầu tiến">向上心</strong>
+            <p data-ja="常に成長を目指します" data-vi="Luôn phấn đấu phát triển">常に成長を目指します</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== MOTIVATION CARD ====== -->
+    <div class="info-card">
+      <div class="card-header">
+        <h2 data-ja="💭 志望動機・自己PR" data-vi="💭 Mục Tiêu & Giới Thiệu">💭 志望動機・自己PR</h2>
+        <span class="card-badge" data-ja="Motivation" data-vi="Động lực">Motivation</span>
+      </div>
+      
+      <div class="motivation-content">
+        <p data-ja="私はITを通じて、日本とベトナムをつなぐ架け橋となり、両国の発展に貢献したいと考えています。" 
+           data-vi="Tôi muốn trở thành cầu nối giữa Nhật Bản và Việt Nam thông qua IT, đóng góp cho sự phát triển của cả hai quốc gia.">
+          私はITを通じて、日本とベトナムをつなぐ架け橋となり、両国の発展に貢献したいと考えています。
+        </p>
+        <p data-ja="独学でプログラミングを学んできた経験を活かし、貴社の業務効率化やWebサービス開発に貢献できるよう、努力してまいります。"
+           data-vi="Với kinh nghiệm tự học lập trình, tôi sẽ nỗ lực đóng góp vào việc tối ưu hóa nghiệp vụ và phát triển dịch vụ web của quý công ty.">
+          独学でプログラミングを学んできた経験を活かし、貴社の業務効率化やWebサービス開発に貢献できるよう、努力してまいります。
+        </p>
+      </div>
+
+      <div class="goals-grid">
+        <div class="goal-item">
+          <span class="goal-icon">🎯</span>
+          <h4 data-ja="短期目標" data-vi="Mục tiêu ngắn hạn">短期目標</h4>
+          <p data-ja="JLPT N3合格、TOEIC 600点以上" data-vi="Đạt JLPT N3, TOEIC 600+">JLPT N3合格、TOEIC 600点以上</p>
+        </div>
+        <div class="goal-item">
+          <span class="goal-icon">🚀</span>
+          <h4 data-ja="中期目標" data-vi="Mục tiêu trung hạn">中期目標</h4>
+          <p data-ja="フルスタック開発者として活躍" data-vi="Trở thành Full-stack Developer">フルスタック開発者として活躍</p>
+        </div>
+        <div class="goal-item">
+          <span class="goal-icon">🌟</span>
+          <h4 data-ja="長期目標" data-vi="Mục tiêu dài hạn">長期目標</h4>
+          <p data-ja="日越IT架け橋プロジェクトを立ち上げ" data-vi="Khởi động dự án cầu nối IT Nhật-Việt">日越IT架け橋プロジェクトを立ち上げ</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== QR CODE & CONTACT CARD ====== -->
+    <div class="info-card qr-section" id="contact">
+      <div class="card-header">
+        <h2 data-ja="📱 連絡先" data-vi="📱 Kết Nối Với Tôi">📱 連絡先</h2>
+        <span class="card-badge" data-ja="Contact" data-vi="Liên hệ">Contact</span>
+      </div>
+      
+      <div class="qr-grid">
+        <!-- QR LINE -->
+        <div class="qr-item">
+          <div class="qr-code-container">
+            <img src="ttt.png" 
+                 alt="LINE QR Code - NGUYEN THANH TAM" 
+                 class="qr-code"
+                 onerror="this.src='https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://line.me/ti/p/tam.nguyen'"
+                 loading="lazy">
+            <div class="qr-overlay">
+              <span>📱 LINE</span>
+            </div>
+          </div>
+          <p class="qr-label">LINE</p>
+          <p data-ja="QRを読み取って友達追加！就職活動やお話、気軽にどうぞ♪" 
+             data-vi="Quét mã QR để kết bạn LINE! Liên hệ việc làm hoặc trò chuyện thoải mái nhé ♪">
+            QRを読み取って友達追加！<br>就職活動やお話、気軽にどうぞ♪
+          </p>
+          <p class="qr-id">ID: tam.nguyen</p>
+        </div>
+
+        <!-- QR Instagram -->
+        <div class="qr-item">
+          <div class="qr-code-container">
+            <img src="inta-qr.png" 
+                 alt="Instagram QR Code - NGUYEN THANH TAM" 
+                 class="qr-code"
+                 onerror="this.src='https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://instagram.com/tam.nguyen'"
+                 loading="lazy">
+            <div class="qr-overlay">
+              <span>📷 Instagram</span>
+            </div>
+          </div>
+          <p class="qr-label">Instagram</p>
+          <p data-ja="QRを読み取ってフォローしてください！日常やポートフォリオ更新をお知らせ♪"
+             data-vi="Quét mã QR để follow! Cập nhật cuộc sống hàng ngày và portfolio ♪">
+            QRを読み取ってフォローしてください！<br>日常やポートフォリオ更新をお知らせ♪
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-info">
+        <div class="contact-method">
+          <span class="contact-icon">📧</span>
+          <div>
+            <strong>Email</strong>
+            <p><a href="mailto:tam@gmail.com">tam@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="contact-method">
+          <span class="contact-icon">📱</span>
+          <div>
+            <strong data-ja="電話" data-vi="Điện thoại">電話</strong>
+            <p><a href="tel:090-1234-5678">090-1234-5678</a></p>
+          </div>
+        </div>
+        <div class="contact-method">
+          <span class="contact-icon">💬</span>
+          <div>
+            <strong>LINE ID</strong>
+            <p>tam.nguyen</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="availability">
+        <p data-ja="📅 面接可能日：土日祝・平日18時以降" 
+           data-vi="📅 Có thể phỏng vấn: Thứ 7, CN, lễ & sau 18h các ngày thường">
+          📅 面接可能日：土日祝・平日18時以降
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3 data-ja="📍 所在地" data-vi="📍 Vị Trí">📍 所在地</h3>
+        <p data-ja="千葉県, Japan 🇯🇵" data-vi="Chiba, Nhật Bản 🇯🇵">千葉県, Japan 🇯🇵</p>
+        <p data-ja="リモートワーク・出社 対応可能" data-vi="Remote hoặc tại văn phòng">リモートワーク・出社 対応可能</p>
+      </div>
+      <div class="footer-section">
+        <h3 data-ja="🌐 言語" data-vi="🌐 Ngôn Ngữ">🌐 言語</h3>
+        <p data-ja="🇻🇳 ベトナム語（母国語）" data-vi="🇻🇳 Tiếng Việt (Bản ngữ)">🇻🇳 ベトナム語（母国語）</p>
+        <p>🇯🇵 日本語（JLPT N4）</p>
+        <p data-ja="🇬🇧 英語（学習中）" data-vi="🇬🇧 Tiếng Anh (Đang học)">🇬🇧 英語（学習中）</p>
+      </div>
+      <div class="footer-section">
+        <h3 data-ja="💼 就職活動" data-vi="💼 Tìm việc">💼 就職活動</h3>
+        <p data-ja="積極的に活動中" data-vi="Đang tích cực tìm việc">積極的に活動中</p>
+        <p data-ja="フルタイム・インターン歓迎" data-vi="Full-time / Thực tập">フルタイム・インターン歓迎</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-heart">💙 Made with love from Vietnam to Japan 💙</p>
+      <p class="footer-copyright">© 2024 NGUYEN THANH TAM. All rights reserved.</p>
+      <p class="footer-note" data-ja="このポートフォリオは自作です" data-vi="Portfolio này do tôi tự thiết kế">このポートフォリオは自作です</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" width="24" height="24">
+      <path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+    </svg>
+  </button>
+
+  <!-- ====== JAVASCRIPT ====== -->
+  <script>
+    // Language switching functionality
+    let currentLang = 'ja'; // Default Japanese
+
+    function switchLanguage(lang) {
+      currentLang = lang;
+      
+      // Update all elements with data-ja and data-vi attributes
+      document.querySelectorAll('[data-ja][data-vi]').forEach(element => {
+        if (lang === 'ja') {
+          element.textContent = element.getAttribute('data-ja');
+        } else if (lang === 'vi') {
+          element.textContent = element.getAttribute('data-vi');
+        }
+      });
+
+      // Add visual feedback to clicked flag
+      document.querySelectorAll('.vn-flag, .jp-flag').forEach(flag => {
+        flag.style.opacity = '0.6';
+      });
+      
+      if (lang === 'ja') {
+        document.querySelector('.jp-flag').style.opacity = '1';
+        document.querySelector('.jp-flag').style.transform = 'scale(1.2)';
+        document.querySelector('.vn-flag').style.transform = 'scale(1)';
+      } else {
+        document.querySelector('.vn-flag').style.opacity = '1';
+        document.querySelector('.vn-flag').style.transform = 'scale(1.2)';
+        document.querySelector('.jp-flag').style.transform = 'scale(1)';
+      }
+
+      // Save preference to localStorage
+      localStorage.setItem('preferredLanguage', lang);
+      
+      // Show notification
+      showLanguageNotification(lang);
+    }
+
+    function showLanguageNotification(lang) {
+      const notification = document.createElement('div');
+      notification.style.cssText = `
+        position: fixed;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: linear-gradient(135deg, #0288d1, #0277bd);
+        color: white;
+        padding: 12px 24px;
+        border-radius: 50px;
+        box-shadow: 0 4px 15px rgba(2, 136, 209, 0.4);
+        z-index: 10000;
+        font-weight: 600;
+        animation: slideDown 0.3s ease;
+      `;
+      notification.textContent = lang === 'ja' ? '🇯🇵 日本語に切り替えました' : '🇻🇳 Đã chuyển sang tiếng Việt';
+      document.body.appendChild(notification);
+      
+      setTimeout(() => {
+        notification.style.animation = 'slideUp 0.3s ease';
+        setTimeout(() => notification.remove(), 300);
+      }, 2000);
+    }
+
+    // Load saved language preference
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('preferredLanguage') || 'ja';
+      if (savedLang !== 'ja') {
+        switchLanguage(savedLang);
+      }
+    });
+
+    // Scroll to top functionality
+    const scrollButton = document.getElementById('scrollToTop');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        scrollButton.classList.add('visible');
+      } else {
+        scrollButton.classList.remove('visible');
+      }
+    });
+    
+    scrollButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Add animation on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.info-card').forEach(card => {
+      observer.observe(card);
+    });
+
+    // Add CSS for animations
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          transform: translateX(-50%) translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(-50%) translateY(0);
+        }
+      }
+      @keyframes slideUp {
+        from {
+          opacity: 1;
+          transform: translateX(-50%) translateY(0);
+        }
+        to {
+          opacity: 0;
+          transform: translateX(-50%) translateY(-20px);
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
+
+</body>
+</html>
